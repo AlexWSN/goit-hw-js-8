@@ -13,7 +13,9 @@ import '../../node_modules/simplelightbox/dist/simple-lightbox.esm.js';
  //GET http://127.0.0.1:5500/parcel-project-template/node_modules/simplelightbox/dist/simple-lightbox net::ERR_ABORTED 404 (Not Found)
  //import {SimpleLightbox} from '../../node_modules/simplelightbox/dist/simple-lightbox';
 
- //import 'simplelightbox/dist/simple-lightbox.min.css'; // Importul CSS-ului
+ import '/node_modules/simplelightbox/dist/simple-lightbox.min.css'; // Importul CSS-ului
+ console.log(SimpleLightbox);  
+ window.global = window;
 
 const galleryContainer = document.querySelector("ul.gallery"); 
 const photosMarkup = createGalleryItems(galleryItems); 
