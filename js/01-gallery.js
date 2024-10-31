@@ -8,12 +8,14 @@ import { galleryItems } from './gallery-items.js';
  // 01-gallery.js:35 Uncaught TypeError: SimpleLightbox is not a constructor
 //  import * as SimpleLightbox from '../../node_modules/simplelightbox/dist/simple-lightbox.min.js';
 
-import '../../node_modules/simplelightbox/dist/simple-lightbox.esm.js';    
+import '..//simple-lightbox.esm.js';    
         
  //GET http://127.0.0.1:5500/parcel-project-template/node_modules/simplelightbox/dist/simple-lightbox net::ERR_ABORTED 404 (Not Found)
  //import {SimpleLightbox} from '../../node_modules/simplelightbox/dist/simple-lightbox';
 
- import '/node_modules/simplelightbox/dist/simple-lightbox.min.css'; // Importul CSS-ului
+ import 'node_modules/simplelightbox/dist/simple-lightbox.min.css'; // Importul CSS-ului
+
+
  console.log(SimpleLightbox);  
  window.global = window;
 
